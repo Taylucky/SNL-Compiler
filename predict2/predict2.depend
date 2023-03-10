@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1649577887 source:d:\月月\大三下\必修课\编译原理课设\predict2\main.cpp
+	<cstdio>
+	<stdio.h>
+	<iostream>
+	<set>
+	<map>
+	<fstream>
+	<string>
+	<Windows.h>
+	<vector>
+	<algorithm>
+

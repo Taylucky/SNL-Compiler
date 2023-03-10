@@ -1,0 +1,305 @@
+*********************
+ProgramHead DeclarePart ProgramBody
+#ProgramHead DeclarePart ProgramBody
+*********************
+PROGRAM ProgramName
+#PROGRAM ProgramName
+*********************
+ID
+#ID
+*********************
+TypeDec VarDec ProcDec
+#TypeDec VarDec ProcDec
+*********************
+ $|TypeDeclaration
+! $
+#TypeDeclaration
+*********************
+TYPE TypeDecList
+#TYPE TypeDecList
+*********************
+TypeId=TypeName;TypeDecMore
+#TypeId=TypeName;TypeDecMore
+*********************
+$|TypeDecList
+!$
+#TypeDecList
+*********************
+ID
+#ID
+*********************
+BaseType|StructureType|ID
+!BaseType
+!StructureType
+#ID
+*********************
+INTEGER|CHAR
+!INTEGER
+#CHAR
+*********************
+ArrayType|RecType
+!ArrayType
+#RecType
+*********************
+ARRAY[low..top ] OF BaseType
+#ARRAY[low..top ] OF BaseType
+*********************
+INTC
+#INTC
+*********************
+INTC
+#INTC
+*********************
+RECORD FieldDecList END
+#RECORD FieldDecList END
+*********************
+BaseType IdList;FieldDecMore|ArrayType IdList;FieldDecMore
+!BaseType IdList;FieldDecMore
+#ArrayType IdList;FieldDecMore
+*********************
+$| FieldDecList
+!$
+# FieldDecList
+*********************
+ID IdMore
+#ID IdMore
+*********************
+$|, IdList
+!$
+#, IdList
+*********************
+$|VarDeclaration
+!$
+#VarDeclaration
+*********************
+VAR VarDecList
+#VAR VarDecList
+*********************
+ TypeName VarIdList ; VarDecMore
+# TypeName VarIdList ; VarDecMore
+*********************
+$|VarDecList
+!$
+#VarDecList
+*********************
+id  VarIdMore
+#id  VarIdMore
+*********************
+$|, VarIdList
+!$
+#, VarIdList
+*********************
+$|ProcDeclaration
+!$
+#ProcDeclaration
+*********************
+PROCEDURE ProcName ( ParamList );ProcDecPart ProcBody ProcDecMore
+#PROCEDURE ProcName ( ParamList );ProcDecPart ProcBody ProcDecMore
+*********************
+$|ProcDeclaration
+!$
+#ProcDeclaration
+*********************
+ID
+#ID
+*********************
+$|ParamDecList
+!$
+#ParamDecList
+*********************
+Param  ParamMore
+#Param  ParamMore
+*********************
+$|; ParamDecList
+!$
+#; ParamDecList
+*********************
+TypeName FormList|VAR TypeNamemFormList
+!TypeName FormList
+#VAR TypeNamemFormList
+*********************
+ID  FidMore
+#ID  FidMore
+*********************
+$|, FormList
+!$
+#, FormList
+*********************
+DeclarePart
+#DeclarePart
+*********************
+ProgramBody
+#ProgramBody
+*********************
+ BEGIN StmList END
+# BEGIN StmList END
+*********************
+        Stm StmMore
+#       Stm StmMore
+*********************
+$|; StmList
+!$
+#; StmList
+*********************
+ConditionalStm|LoopStm|InputStm|OutputStm|ReturnStm|ID AssCall
+!ConditionalStm
+!LoopStm
+!InputStm
+!OutputStm
+!ReturnStm
+#ID AssCall
+*********************
+AssignmentRest|CallStmRest
+!AssignmentRest
+#CallStmRest
+*********************
+ VariMore:= Exp
+# VariMore:= Exp
+*********************
+IF RelExp THEN StmList ELSE StmList  FI
+#IF RelExp THEN StmList ELSE StmList  FI
+*********************
+WHILE  RelExp DO StmList ENDWH
+#WHILE  RelExp DO StmList ENDWH
+*********************
+READ ( Invar )
+#READ ( Invar )
+*********************
+ID
+#ID
+*********************
+WRITE( Exp )
+#WRITE( Exp )
+*********************
+RETURN ( Exp )
+#RETURN ( Exp )
+*********************
+( ActParamList )
+#( ActParamList )
+*********************
+$|Exp  ActParamMore
+!$
+#Exp  ActParamMore
+*********************
+$|,  ActParamList
+!$
+#,  ActParamList
+*********************
+Exp  OtherRelE
+#Exp  OtherRelE
+*********************
+CmpOp   Exp
+#CmpOp   Exp
+*********************
+ Term OtherTerm
+# Term OtherTerm
+*********************
+$|AddOp   Exp
+!$
+#AddOp   Exp
+*********************
+Factor   OtherFactor
+#Factor   OtherFactor
+*********************
+$|MultOp  Term
+!$
+#MultOp  Term
+*********************
+( Exp )|INTC|Variable
+!( Exp )
+!INTC
+#Variable
+*********************
+ID VariMore
+#ID VariMore
+*********************
+$|[ Exp ]|.  FieldVar
+!$
+![ Exp ]
+#.  FieldVar
+*********************
+ID   FieldVarMore
+#ID   FieldVarMore
+*********************
+$|[ Exp ]
+!$
+#[ Exp ]
+*********************
+<|=
+!<
+#=
+*********************
++|-
+!+
+#-
+*********************
+*|/
+!*
+#/
+ActParamList:$/Exp  ActParamMore/
+ActParamMore:$/,  ActParamList/
+AddOp:+/-/
+ArrayType:ARRAY[low..top ] OF BaseType/
+AssCall:AssignmentRest/CallStmRest/
+AssignmentRest: VariMore:= Exp/
+BaseType:CHAR/INTEGER/
+CallStmRest:( ActParamList )/
+CmpOp:</=/
+ConditionalStm:IF RelExp THEN StmList ELSE StmList  FI/
+DeclarePart:TypeDec VarDec ProcDec/
+Exp: Term OtherTerm/
+Factor:( Exp )/INTC/Variable/
+FidMore :$/, FormList/
+FieldDecList:ArrayType IdList;FieldDecMore/BaseType IdList;FieldDecMore/
+FieldDecMore: FieldDecList/$/
+FieldVar:ID   FieldVarMore/
+FieldVarMore:$/[ Exp ]/
+FormList:ID  FidMore/
+IdList:ID IdMore/
+IdMore:$/, IdList/
+InputStm:READ ( Invar )/
+Invar:ID        /
+LoopStm:WHILE  RelExp DO StmList ENDWH/
+Low:INTC/
+MultOp:*///
+OtherFactor:$/MultOp  Term/
+OtherRelE:CmpOp   Exp/
+OtherTerm:$/AddOp   Exp/
+OutputStm:WRITE( Exp )/
+Param:TypeName FormList/VAR TypeNamemFormList/
+ParamDecList:Param  ParamMore/
+ParamList:$/ParamDecList/
+ParamMore:$/; ParamDecList/
+ProcBody        :ProgramBody/
+ProcDec:$/ProcDeclaration/
+ProcDecMore:$/ProcDeclaration/
+ProcDecPart:DeclarePart/
+ProcDeclaration:PROCEDURE ProcName ( ParamList );ProcDecPart ProcBody ProcDecMore/
+ProcName:ID/
+Program:ProgramHead DeclarePart ProgramBody/
+ProgramBody: BEGIN StmList END/
+ProgramHead:PROGRAM ProgramName/
+ProgramName:ID/
+RecType:RECORD FieldDecList END/
+RelExp:Exp  OtherRelE/
+ReturnStm:RETURN ( Exp )/
+Stm:ConditionalStm/ID AssCall/InputStm/LoopStm/OutputStm/ReturnStm/
+StmList:        Stm StmMore/
+StmMore:$/; StmList/
+StructureType:ArrayType/RecType/
+Term:Factor   OtherFactor/
+Top:INTC/
+TypeDec: $/TypeDeclaration/
+TypeDecList:TypeId=TypeName;TypeDecMore/
+TypeDecMore:$/TypeDecList/
+TypeDeclaration:TYPE TypeDecList/
+TypeId:ID/
+TypeName:BaseType/ID/StructureType/
+VarDec:$/VarDeclaration/
+VarDecList : TypeName VarIdList ; VarDecMore/
+VarDecMore:$/VarDecList/
+VarDeclaration:VAR VarDecList/
+VarIdList:id  VarIdMore/
+VarIdMore:$/, VarIdList/
+VariMore:$/.  FieldVar/[ Exp ]/
+Variable:ID VariMore/

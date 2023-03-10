@@ -1,0 +1,22 @@
+ProK
+|                                                                           
+|___PheadK
+|                                                                           
+|___VarK 
+|   |                                                                       
+|   |___DecK CharK : y 
+|                                                                           
+|___StmLK
+    |                                                                       
+    |___StmtK AssignK
+    |   |                                                                   
+    |   |___ExpK y VariK 
+    |   |                                                                   
+    |   |___ExpK 0 ConstK 
+    |                                                                       
+    |___StmtK ReadK
+    |                                                                       
+    |___StmtK WriteK
+        |                                                                   
+        |___ExpK y VariK 
+                                                                            

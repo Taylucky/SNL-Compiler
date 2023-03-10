@@ -1,0 +1,7 @@
+DeclarePart::=TypeDec VarDec ProcDec
+TypeDec::=$|TypeDeclaration
+TypeDeclaration::=TYPE TypeDecList
+VarDec::=$|VarDeclaration
+VarDeclaration::=VAR VarDecList
+ProcDec::=$|ProcDeclaration
+ProcDeclaration::=PROCEDURE ProcName ( ParamList ) ; ProcDecPart ProcBody ProcDecMore

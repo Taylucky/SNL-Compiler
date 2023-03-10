@@ -1,0 +1,105 @@
+Number	TokenType	Predicts
+1	Program  	PROGRAM	
+2	ProgramHead  	PROGRAM	
+3	ProgramName  	ID	
+4	DeclarePart  	BEGIN	PROCEDURE	TYPE	VAR	
+5	TypeDec  	BEGIN	PROCEDURE	VAR	
+6	TypeDec  	TYPE	
+7	TypeDeclaration  	TYPE	
+8	TypeDecList  	ID	
+9	TypeDecMore  	BEGIN	PROCEDURE	VAR	
+10	TypeDecMore  	ID	
+11	TypeId  	ID	
+12	TypeName  	CHAR	INTEGER	
+13	TypeName  	ARRAY[low..top]	RECORD	
+14	TypeName  	ID	
+15	BaseType  	INTEGER	
+16	BaseType  	CHAR	
+17	StructureType  	ARRAY[low..top]	
+18	StructureType  	RECORD	
+19	ArrayType  	ARRAY[low..top]	
+20	Low  	INTC	
+21	Top  	INTC	
+22	RecType  	RECORD	
+23	FieldDecList  	CHAR	INTEGER	
+24	FieldDecList  	ARRAY[low..top]	
+25	FieldDecMore  	END	
+26	FieldDecMore  	ARRAY[low..top]	CHAR	INTEGER	
+27	IdList  	ID	
+28	IdMore  	;	
+29	IdMore  	,	
+30	VarDec  	BEGIN	PROCEDURE	
+31	VarDec  	VAR	
+32	VarDeclaration  	VAR	
+33	VarDecList  	ARRAY[low..top]	CHAR	ID	INTEGER	RECORD	
+34	VarDecMore  	BEGIN	PROCEDURE	
+35	VarDecMore  	ARRAY[low..top]	CHAR	ID	INTEGER	RECORD	
+36	VarIdList  	ID	
+37	VarIdMore  	;	
+38	VarIdMore  	,	
+39	ProcDec  	BEGIN	
+40	ProcDec  	PROCEDURE	
+41	ProcDeclaration  	PROCEDURE	
+42	ProcDecMore  	BEGIN	
+43	ProcDecMore  	PROCEDURE	
+44	ProcName  	ID	
+45	ParamList  	)	
+46	ParamList  	ARRAY[low..top]	CHAR	ID	INTEGER	RECORD	VAR	
+47	ParamDecList  	ARRAY[low..top]	CHAR	ID	INTEGER	RECORD	VAR	
+48	ParamMore  	)	
+49	ParamMore  	;	
+50	Param  	ARRAY[low..top]	CHAR	ID	INTEGER	RECORD	
+51	Param  	VAR	
+52	FormList  	ID	
+53	FidMore  	)	;	
+54	FidMore  	,	
+55	ProcDecPart  	BEGIN	PROCEDURE	TYPE	VAR	
+56	ProcBody  	BEGIN	
+57	ProgramBody  	BEGIN	
+58	StmList  	ID	IF	READ	RETURN	WHILE	WRITE	
+59	StmMore  	ELSE	END	ENDWH	FI	
+60	StmMore  	;	
+61	Stm  	IF	
+62	Stm  	WHILE	
+63	Stm  	READ	
+64	Stm  	WRITE	
+65	Stm  	RETURN	
+66	Stm  	ID	
+67	AssCall  	.	:=	[	
+68	AssCall  	(	
+69	AssignmentRest  	.	:=	[	
+70	ConditionalStm  	IF	
+71	LoopStm  	WHILE	
+72	InputStm  	READ	
+73	Invar  	ID	
+74	OutputStm  	WRITE	
+75	ReturnStm  	RETURN	
+76	CallStmRest  	(	
+77	ActParamList  	)	
+78	ActParamList  	(	ID	INTC	
+79	ActParamMore  	)	
+80	ActParamMore  	,	
+81	RelExp  	(	ID	INTC	
+82	OtherRelE  	<	=	
+83	Exp  	(	ID	INTC	
+84	OtherTerm  	)	,	;	<	=	DO	ELSE	END	ENDWH	FI	THEN	]	
+85	OtherTerm  	+	-	
+86	Term  	(	ID	INTC	
+87	OtherFactor  	)	+	,	-	;	<	=	DO	ELSE	END	ENDWH	FI	THEN	]	
+88	OtherFactor  	*	/	
+89	Factor  	(	
+90	Factor  	INTC	
+91	Factor  	ID	
+92	Variable  	ID	
+93	VariMore  	)	*	+	,	-	/	:=	;	<	=	DO	ELSE	END	ENDWH	FI	THEN	]	
+94	VariMore  	[	
+95	VariMore  	.	
+96	FieldVar  	ID	
+97	FieldVarMore  	)	*	+	,	-	/	:=	;	<	=	DO	ELSE	END	ENDWH	FI	THEN	]	
+98	FieldVarMore  	[	
+99	CmpOp  	<	
+100	CmpOp  	=	
+101	AddOp  	+	
+102	AddOp  	-	
+103	MultOp  	*	
+104	MultOp  	/	

@@ -1,0 +1,15 @@
+﻿  源.cpp
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\源.cpp(155,40): warning C4305: “参数”: 从“int”到“const _Elem”截断
+          with
+          [
+              _Elem=char
+          ]
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\源.cpp(155,34): warning C4309: “参数”: 截断常量值
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\源.cpp(163,27): warning C4018: “<”: 有符号/无符号不匹配
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\源.cpp(350,44): warning C4305: “参数”: 从“int”到“const _Elem”截断
+          with
+          [
+              _Elem=char
+          ]
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\源.cpp(350,38): warning C4309: “参数”: 截断常量值
+  Project_predict.vcxproj -> D:\月月\大三下\必修课\编译原理课设\Project_predict\Debug\Project_predict.exe

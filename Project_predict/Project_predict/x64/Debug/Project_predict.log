@@ -1,0 +1,178 @@
+﻿  predict.cpp
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(16,18): error C2143: 语法错误: 缺少“}”(在“常数”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(16,18): error C2059: 语法错误:“常数”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(55,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(55,1): error C2059: 语法错误:“}”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,4): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,4): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,15): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,15): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(90,4): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(90,4): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(90,1): error C2086: “int set”: 重定义
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58): message : 参见“set”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(90,15): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(90,15): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(27,8): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(27,8): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(27,8): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(27,25): error C2238: 意外的标记位于“;”之前
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(28,8): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(28,8): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(28,8): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(28,27): error C2238: 意外的标记位于“;”之前
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(32,16): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(32,17): error C2275: “std::vector<std::string,std::allocator<std::string>>”: 将此类型用作表达式非法
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(26): message : 参见“std::vector<std::string,std::allocator<std::string>>”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(32,1): error C2974: "std::map": "_Ty" 的 模板 参数无效，应为类型
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(32,1): error C2976: “std::map”: 模板 参数太少
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(32,32): error C2059: 语法错误:“>”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(33,16): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(33,17): error C2275: “std::string”: 将此类型用作表达式非法
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(4927): message : 参见“std::string”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(33,1): error C2974: "std::map": "_Ty" 的 模板 参数无效，应为类型
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(33,1): error C2976: “std::map”: 模板 参数太少
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(33,23): error C2059: 语法错误:“>”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(34,16): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(34,17): error C2275: “std::string”: 将此类型用作表达式非法
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(4927): message : 参见“std::string”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(34,1): error C2974: "std::map": "_Ty" 的 模板 参数无效，应为类型
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(34,1): error C2976: “std::map”: 模板 参数太少
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(34,23): error C2059: 语法错误:“>”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(35,13): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(35,14): error C2275: “std::string”: 将此类型用作表达式非法
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(4927): message : 参见“std::string”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(35,1): error C2974: "std::map": "_Ty" 的 模板 参数无效，应为类型
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(35,1): error C2976: “std::map”: 模板 参数太少
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(35,20): error C2059: 语法错误:“>”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(36,13): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(36,14): error C2275: “std::string”: 将此类型用作表达式非法
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(4927): message : 参见“std::string”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(36,1): error C2974: "std::map": "_Ty" 的 模板 参数无效，应为类型
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(36,1): error C2976: “std::map”: 模板 参数太少
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\map(73): message : 参见“std::map”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(36,20): error C2059: 语法错误:“>”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(37,4): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(37,4): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(37,4): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(37,1): error C2086: “int set”: 重定义
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58): message : 参见“set”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,13): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,9): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,14): error C2275: “std::string”: 将此类型用作表达式非法
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(4927): message : 参见“std::string”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,23): error C2955: “std::iterator”: 使用 类 模板 需要 模板 参数列表
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(6048): message : 参见“std::iterator”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,32): error C2146: 语法错误: 缺少“;”(在标识符“it”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,35): error C2143: 语法错误: 缺少“;”(在“=”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,35): error C2143: 语法错误: 缺少“)”(在“=”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,35): error C2059: 语法错误:“=”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,49): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,55): error C2065: “Vn”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,65): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(83,69): error C2059: 语法错误:“)”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(84,9): error C2065: “follow”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(84,17): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(84,29): error C2059: 语法错误:“;”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(86,1): error C2059: 语法错误:“}”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(86,1): error C2143: 语法错误: 缺少“;”(在“}”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(88,28): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(88,28): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(99,13): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(108,41): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(128,40): warning C4305: “参数”: 从“int”到“const _Elem”截断
+          with
+          [
+              _Elem=char
+          ]
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(128,34): warning C4309: “参数”: 截断常量值
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(128,41): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(134,12): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(134,13): error C2275: “std::vector<std::string,std::allocator<std::string>>”: 将此类型用作表达式非法
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(26): message : 参见“std::vector<std::string,std::allocator<std::string>>”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(134,29): error C2065: “split”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(140,17): error C2065: “split”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(149,9): error C2065: “split”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(153,9): error C2065: “grammars”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(153,41): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(153,42): error C2275: “std::vector<std::string,std::allocator<std::string>>”: 将此类型用作表达式非法
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(26): message : 参见“std::vector<std::string,std::allocator<std::string>>”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(153,25): error C2974: "std::pair": "_Ty2" 的 模板 参数无效，应为类型
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\utility(123): message : 参见“std::pair”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(153,25): error C2955: “std::pair”: 使用 类 模板 需要 模板 参数列表
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\utility(123): message : 参见“std::pair”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(153,62): error C2065: “split”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(167,4): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(167,4): error C2143: 语法错误: 缺少“;”(在“<”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(167,4): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(167,1): error C2086: “int set”: 重定义
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58): message : 参见“set”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(167,34): error C2143: 语法错误: 缺少“;”(在“{”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(167,34): error C2447: “{”: 缺少函数标题(是否是老式的形式表?)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,13): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,9): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,14): error C2275: “std::string”: 将此类型用作表达式非法
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xstring(4927): message : 参见“std::string”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,23): error C2955: “std::iterator”: 使用 类 模板 需要 模板 参数列表
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\xutility(6048): message : 参见“std::iterator”的声明
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,32): error C2146: 语法错误: 缺少“;”(在标识符“it”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,35): error C2143: 语法错误: 缺少“;”(在“=”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,35): error C2143: 语法错误: 缺少“)”(在“=”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,35): error C2059: 语法错误:“=”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,49): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,55): error C2065: “Vn”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,65): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(240,69): error C2059: 语法错误:“)”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(241,9): error C2065: “first”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(241,16): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(241,32): error C2065: “it”: 未声明的标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(241,22): error C3861: “getFirst”: 找不到标识符
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(241,35): error C2059: 语法错误:“;”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(244,13): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(244,9): error C2872: “set”: 不明确的符号
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.h(58,1): message : 可能是“int set”
+D:\chrome下载\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103\include\set(52,1): message : 或    “std::set”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(244,5): error C2059: 语法错误:“for”
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(244,47): error C2143: 语法错误: 缺少“)”(在“;”的前面)
+D:\月月\大三下\必修课\编译原理课设\Project_predict\Project_predict\predict.cpp(244,47): fatal error C1003: 错误计数超过 100；正在停止编译

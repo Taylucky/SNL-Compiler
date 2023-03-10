@@ -1,0 +1,19 @@
+
+
+
+
+
+                       Open a document
+
+               - ＊ - ＊ - ＊ - ＊ - ＊ - ＊ - 
+
+	           文件 > 新建文件
+
+	           文件 > 打开文件
+
+                 Welcome to SNL compiler !
+		      
+             Let's have fun knocking out code!
+
+           
+        

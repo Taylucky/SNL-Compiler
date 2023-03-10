@@ -1,0 +1,35 @@
+program  example1              {program head}
+type w1=integer;               {type dec}
+     w2=record
+          integer  x;
+          char     y,z,m;
+        end;
+     w3=array [3..6] of integer;  
+var integer p;                 {var dec}
+     w3 c;
+     w2 d;
+    integer a;
+procedure sd(integer s1;var integer s2);             {process dec}
+var integer  x,y;                    {process var dec}
+procedure sd1(integer y);           {process process dec}
+begin
+   write(y)
+end
+begin                        {process body}
+   if a=2
+   then x:=s1*(5+7)+10
+   else 
+	x:=s1/9;  
+	sd1(x)  
+  fi;
+   return
+end
+begin                  {program body}
+   while a<5
+   do 
+   sd(2,a);
+   c[3]:=a*2;
+   c[a]:=d.x;
+   read(p)      
+   endwh    
+end.

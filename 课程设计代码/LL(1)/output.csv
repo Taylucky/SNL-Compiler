@@ -1,0 +1,254 @@
+序号,分析栈栈顶,当前输入流,动作
+1,Program,PROGRAM,将产生式1推导出的文法符号.     ProgramBody     DeclarePart     ProgramHead     加入到分析栈中
+2,ProgramHead,PROGRAM,将产生式2推导出的文法符号ProgramName     PROGRAM     加入到分析栈中
+3,PROGRAM,PROGRAM,匹配
+4,ProgramName,ID,将产生式3推导出的文法符号ID     加入到分析栈中
+5,ID,ID,匹配
+6,DeclarePart,TYPE,将产生式4推导出的文法符号ProcDec     VarDec     TypeDec     加入到分析栈中
+7,TypeDec,TYPE,将产生式6推导出的文法符号TypeDeclaration     加入到分析栈中
+8,TypeDeclaration,TYPE,将产生式7推导出的文法符号TypeDecList     TYPE     加入到分析栈中
+9,TYPE,TYPE,匹配
+10,TypeDecList,ID,将产生式8推导出的文法符号TypeDecMore     ;     TypeName     =     TypeId     加入到分析栈中
+11,TypeId,ID,将产生式11推导出的文法符号ID     加入到分析栈中
+12,ID,ID,匹配
+13,=,=,匹配
+14,TypeName,INTEGER,将产生式12推导出的文法符号BaseType     加入到分析栈中
+15,BaseType,INTEGER,将产生式15推导出的文法符号INTEGER     加入到分析栈中
+16,INTEGER,INTEGER,匹配
+17,;,;,匹配
+18,TypeDecMore,VAR,将产生式9推导出的文法符号@     加入到分析栈中
+19,@,VAR,分析栈弹出空字符 
+20,VarDec,VAR,将产生式31推导出的文法符号VarDeclaration     加入到分析栈中
+21,VarDeclaration,VAR,将产生式32推导出的文法符号VarDecList     VAR     加入到分析栈中
+22,VAR,VAR,匹配
+23,VarDecList,INTEGER,将产生式33推导出的文法符号VarDecMore     ;     VarIdList     TypeName     加入到分析栈中
+24,TypeName,INTEGER,将产生式12推导出的文法符号BaseType     加入到分析栈中
+25,BaseType,INTEGER,将产生式15推导出的文法符号INTEGER     加入到分析栈中
+26,INTEGER,INTEGER,匹配
+27,VarIdList,ID,将产生式36推导出的文法符号VarIdMore     ID     加入到分析栈中
+28,ID,ID,匹配
+29,VarIdMore,,,将产生式38推导出的文法符号VarIdList     ,     加入到分析栈中
+30,,,,,匹配
+31,VarIdList,ID,将产生式36推导出的文法符号VarIdMore     ID     加入到分析栈中
+32,ID,ID,匹配
+33,VarIdMore,;,将产生式37推导出的文法符号@     加入到分析栈中
+34,@,;,分析栈弹出空字符 
+35,;,;,匹配
+36,VarDecMore,PROCEDURE,将产生式34推导出的文法符号@     加入到分析栈中
+37,@,PROCEDURE,分析栈弹出空字符 
+38,ProcDec,PROCEDURE,将产生式40推导出的文法符号ProcDeclaration     加入到分析栈中
+39,ProcDeclaration,PROCEDURE,将产生式41推导出的文法符号ProcDec     ProcBody     ProcDecPart     ;     )     ParamList     (     ProcName     PROCEDURE     加入到分析栈中
+40,PROCEDURE,PROCEDURE,匹配
+41,ProcName,ID,将产生式49推导出的文法符号ID     加入到分析栈中
+42,ID,ID,匹配
+43,(,(,匹配
+44,ParamList,INTEGER,将产生式43推导出的文法符号ParamDecList     加入到分析栈中
+45,ParamDecList,INTEGER,将产生式44推导出的文法符号ParamMore     Param     加入到分析栈中
+46,Param,INTEGER,将产生式50推导出的文法符号FormList     TypeName     加入到分析栈中
+47,TypeName,INTEGER,将产生式12推导出的文法符号BaseType     加入到分析栈中
+48,BaseType,INTEGER,将产生式15推导出的文法符号INTEGER     加入到分析栈中
+49,INTEGER,INTEGER,匹配
+50,FormList,ID,将产生式52推导出的文法符号FidMore     ID     加入到分析栈中
+51,ID,ID,匹配
+52,FidMore,),将产生式53推导出的文法符号@     加入到分析栈中
+53,@,),分析栈弹出空字符 
+54,ParamMore,),将产生式45推导出的文法符号@     加入到分析栈中
+55,@,),分析栈弹出空字符 
+56,),),匹配
+57,;,;,匹配
+58,ProcDecPart,VAR,将产生式55推导出的文法符号DeclarePart     加入到分析栈中
+59,DeclarePart,VAR,将产生式4推导出的文法符号ProcDec     VarDec     TypeDec     加入到分析栈中
+60,TypeDec,VAR,将产生式5推导出的文法符号@     加入到分析栈中
+61,@,VAR,分析栈弹出空字符 
+62,VarDec,VAR,将产生式31推导出的文法符号VarDeclaration     加入到分析栈中
+63,VarDeclaration,VAR,将产生式32推导出的文法符号VarDecList     VAR     加入到分析栈中
+64,VAR,VAR,匹配
+65,VarDecList,INTEGER,将产生式33推导出的文法符号VarDecMore     ;     VarIdList     TypeName     加入到分析栈中
+66,TypeName,INTEGER,将产生式12推导出的文法符号BaseType     加入到分析栈中
+67,BaseType,INTEGER,将产生式15推导出的文法符号INTEGER     加入到分析栈中
+68,INTEGER,INTEGER,匹配
+69,VarIdList,ID,将产生式36推导出的文法符号VarIdMore     ID     加入到分析栈中
+70,ID,ID,匹配
+71,VarIdMore,;,将产生式37推导出的文法符号@     加入到分析栈中
+72,@,;,分析栈弹出空字符 
+73,;,;,匹配
+74,VarDecMore,BEGIN,将产生式34推导出的文法符号@     加入到分析栈中
+75,@,BEGIN,分析栈弹出空字符 
+76,ProcDec,BEGIN,将产生式39推导出的文法符号@     加入到分析栈中
+77,@,BEGIN,分析栈弹出空字符 
+78,ProcBody,BEGIN,将产生式56推导出的文法符号ProgramBody     加入到分析栈中
+79,ProgramBody,BEGIN,将产生式57推导出的文法符号END     StmList     BEGIN     加入到分析栈中
+80,BEGIN,BEGIN,匹配
+81,StmList,ID,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+82,Stm,ID,将产生式66推导出的文法符号AssCall     ID     加入到分析栈中
+83,ID,ID,匹配
+84,AssCall,:=,将产生式67推导出的文法符号AssignmentRest     加入到分析栈中
+85,AssignmentRest,:=,将产生式69推导出的文法符号Exp     :=     VariMore     加入到分析栈中
+86,VariMore,:=,将产生式93推导出的文法符号@     加入到分析栈中
+87,@,:=,分析栈弹出空字符 
+88,:=,:=,匹配
+89,Exp,ID,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+90,Term,ID,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+91,Factor,ID,将产生式91推导出的文法符号Variable     加入到分析栈中
+92,Variable,ID,将产生式92推导出的文法符号VariMore     ID     加入到分析栈中
+93,ID,ID,匹配
+94,VariMore,;,将产生式93推导出的文法符号@     加入到分析栈中
+95,@,;,分析栈弹出空字符 
+96,OtherFactor,;,将产生式87推导出的文法符号@     加入到分析栈中
+97,@,;,分析栈弹出空字符 
+98,OtherTerm,;,将产生式84推导出的文法符号@     加入到分析栈中
+99,@,;,分析栈弹出空字符 
+100,StmMore,;,将产生式60推导出的文法符号StmList     ;     加入到分析栈中
+101,;,;,匹配
+102,StmList,WRITE,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+103,Stm,WRITE,将产生式64推导出的文法符号OutputStm     加入到分析栈中
+104,OutputStm,WRITE,将产生式74推导出的文法符号)     Exp     (     WRITE     加入到分析栈中
+105,WRITE,WRITE,匹配
+106,(,(,匹配
+107,Exp,ID,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+108,Term,ID,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+109,Factor,ID,将产生式91推导出的文法符号Variable     加入到分析栈中
+110,Variable,ID,将产生式92推导出的文法符号VariMore     ID     加入到分析栈中
+111,ID,ID,匹配
+112,VariMore,),将产生式93推导出的文法符号@     加入到分析栈中
+113,@,),分析栈弹出空字符 
+114,OtherFactor,),将产生式87推导出的文法符号@     加入到分析栈中
+115,@,),分析栈弹出空字符 
+116,OtherTerm,),将产生式84推导出的文法符号@     加入到分析栈中
+117,@,),分析栈弹出空字符 
+118,),),匹配
+119,StmMore,END,将产生式59推导出的文法符号@     加入到分析栈中
+120,@,END,分析栈弹出空字符 
+121,END,END,匹配
+122,ProcDec,BEGIN,将产生式39推导出的文法符号@     加入到分析栈中
+123,@,BEGIN,分析栈弹出空字符 
+124,ProgramBody,BEGIN,将产生式57推导出的文法符号END     StmList     BEGIN     加入到分析栈中
+125,BEGIN,BEGIN,匹配
+126,StmList,READ,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+127,Stm,READ,将产生式63推导出的文法符号InputStm     加入到分析栈中
+128,InputStm,READ,将产生式72推导出的文法符号)     Invar     (     READ     加入到分析栈中
+129,READ,READ,匹配
+130,(,(,匹配
+131,Invar,ID,将产生式73推导出的文法符号ID     加入到分析栈中
+132,ID,ID,匹配
+133,),),匹配
+134,StmMore,;,将产生式60推导出的文法符号StmList     ;     加入到分析栈中
+135,;,;,匹配
+136,StmList,IF,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+137,Stm,IF,将产生式61推导出的文法符号ConditionalStm     加入到分析栈中
+138,ConditionalStm,IF,将产生式70推导出的文法符号FI     StmList     ELSE     StmList     THEN     RelExp     IF     加入到分析栈中
+139,IF,IF,匹配
+140,RelExp,ID,将产生式81推导出的文法符号OtherRelE     Exp     加入到分析栈中
+141,Exp,ID,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+142,Term,ID,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+143,Factor,ID,将产生式91推导出的文法符号Variable     加入到分析栈中
+144,Variable,ID,将产生式92推导出的文法符号VariMore     ID     加入到分析栈中
+145,ID,ID,匹配
+146,VariMore,<,将产生式93推导出的文法符号@     加入到分析栈中
+147,@,<,分析栈弹出空字符 
+148,OtherFactor,<,将产生式87推导出的文法符号@     加入到分析栈中
+149,@,<,分析栈弹出空字符 
+150,OtherTerm,<,将产生式84推导出的文法符号@     加入到分析栈中
+151,@,<,分析栈弹出空字符 
+152,OtherRelE,<,将产生式82推导出的文法符号Exp     CmpOp     加入到分析栈中
+153,CmpOp,<,将产生式99推导出的文法符号<     加入到分析栈中
+154,<,<,匹配
+155,Exp,INTC,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+156,Term,INTC,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+157,Factor,INTC,将产生式90推导出的文法符号INTC     加入到分析栈中
+158,INTC,INTC,匹配
+159,OtherFactor,THEN,将产生式87推导出的文法符号@     加入到分析栈中
+160,@,THEN,分析栈弹出空字符 
+161,OtherTerm,THEN,将产生式84推导出的文法符号@     加入到分析栈中
+162,@,THEN,分析栈弹出空字符 
+163,THEN,THEN,匹配
+164,StmList,ID,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+165,Stm,ID,将产生式66推导出的文法符号AssCall     ID     加入到分析栈中
+166,ID,ID,匹配
+167,AssCall,:=,将产生式67推导出的文法符号AssignmentRest     加入到分析栈中
+168,AssignmentRest,:=,将产生式69推导出的文法符号Exp     :=     VariMore     加入到分析栈中
+169,VariMore,:=,将产生式93推导出的文法符号@     加入到分析栈中
+170,@,:=,分析栈弹出空字符 
+171,:=,:=,匹配
+172,Exp,ID,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+173,Term,ID,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+174,Factor,ID,将产生式91推导出的文法符号Variable     加入到分析栈中
+175,Variable,ID,将产生式92推导出的文法符号VariMore     ID     加入到分析栈中
+176,ID,ID,匹配
+177,VariMore,+,将产生式93推导出的文法符号@     加入到分析栈中
+178,@,+,分析栈弹出空字符 
+179,OtherFactor,+,将产生式87推导出的文法符号@     加入到分析栈中
+180,@,+,分析栈弹出空字符 
+181,OtherTerm,+,将产生式85推导出的文法符号Exp     AddOp     加入到分析栈中
+182,AddOp,+,将产生式101推导出的文法符号+     加入到分析栈中
+183,+,+,匹配
+184,Exp,INTC,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+185,Term,INTC,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+186,Factor,INTC,将产生式90推导出的文法符号INTC     加入到分析栈中
+187,INTC,INTC,匹配
+188,OtherFactor,ELSE,将产生式87推导出的文法符号@     加入到分析栈中
+189,@,ELSE,分析栈弹出空字符 
+190,OtherTerm,ELSE,将产生式84推导出的文法符号@     加入到分析栈中
+191,@,ELSE,分析栈弹出空字符 
+192,StmMore,ELSE,将产生式59推导出的文法符号@     加入到分析栈中
+193,@,ELSE,分析栈弹出空字符 
+194,ELSE,ELSE,匹配
+195,StmList,ID,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+196,Stm,ID,将产生式66推导出的文法符号AssCall     ID     加入到分析栈中
+197,ID,ID,匹配
+198,AssCall,:=,将产生式67推导出的文法符号AssignmentRest     加入到分析栈中
+199,AssignmentRest,:=,将产生式69推导出的文法符号Exp     :=     VariMore     加入到分析栈中
+200,VariMore,:=,将产生式93推导出的文法符号@     加入到分析栈中
+201,@,:=,分析栈弹出空字符 
+202,:=,:=,匹配
+203,Exp,ID,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+204,Term,ID,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+205,Factor,ID,将产生式91推导出的文法符号Variable     加入到分析栈中
+206,Variable,ID,将产生式92推导出的文法符号VariMore     ID     加入到分析栈中
+207,ID,ID,匹配
+208,VariMore,-,将产生式93推导出的文法符号@     加入到分析栈中
+209,@,-,分析栈弹出空字符 
+210,OtherFactor,-,将产生式87推导出的文法符号@     加入到分析栈中
+211,@,-,分析栈弹出空字符 
+212,OtherTerm,-,将产生式85推导出的文法符号Exp     AddOp     加入到分析栈中
+213,AddOp,-,将产生式102推导出的文法符号-     加入到分析栈中
+214,-,-,匹配
+215,Exp,INTC,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+216,Term,INTC,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+217,Factor,INTC,将产生式90推导出的文法符号INTC     加入到分析栈中
+218,INTC,INTC,匹配
+219,OtherFactor,FI,将产生式87推导出的文法符号@     加入到分析栈中
+220,@,FI,分析栈弹出空字符 
+221,OtherTerm,FI,将产生式84推导出的文法符号@     加入到分析栈中
+222,@,FI,分析栈弹出空字符 
+223,StmMore,FI,将产生式59推导出的文法符号@     加入到分析栈中
+224,@,FI,分析栈弹出空字符 
+225,FI,FI,匹配
+226,StmMore,;,将产生式60推导出的文法符号StmList     ;     加入到分析栈中
+227,;,;,匹配
+228,StmList,ID,将产生式58推导出的文法符号StmMore     Stm     加入到分析栈中
+229,Stm,ID,将产生式66推导出的文法符号AssCall     ID     加入到分析栈中
+230,ID,ID,匹配
+231,AssCall,(,将产生式68推导出的文法符号CallStmRest     加入到分析栈中
+232,CallStmRest,(,将产生式76推导出的文法符号)     ActParamList     (     加入到分析栈中
+233,(,(,匹配
+234,ActParamList,ID,将产生式78推导出的文法符号ActParamMore     Exp     加入到分析栈中
+235,Exp,ID,将产生式83推导出的文法符号OtherTerm     Term     加入到分析栈中
+236,Term,ID,将产生式86推导出的文法符号OtherFactor     Factor     加入到分析栈中
+237,Factor,ID,将产生式91推导出的文法符号Variable     加入到分析栈中
+238,Variable,ID,将产生式92推导出的文法符号VariMore     ID     加入到分析栈中
+239,ID,ID,匹配
+240,VariMore,),将产生式93推导出的文法符号@     加入到分析栈中
+241,@,),分析栈弹出空字符 
+242,OtherFactor,),将产生式87推导出的文法符号@     加入到分析栈中
+243,@,),分析栈弹出空字符 
+244,OtherTerm,),将产生式84推导出的文法符号@     加入到分析栈中
+245,@,),分析栈弹出空字符 
+246,ActParamMore,),将产生式79推导出的文法符号@     加入到分析栈中
+247,@,),分析栈弹出空字符 
+248,),),匹配
+249,StmMore,END,将产生式59推导出的文法符号@     加入到分析栈中
+250,@,END,分析栈弹出空字符 
+251,END,END,匹配
+252,.,.,匹配
+253,#,#,语法分析成功!
